@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRINCANOTA: +150 Atividades Musicais em PDF + BÔNUS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Ícones customizados */
+        .icon-check::before { content: '✓ '; color: #10B981; font-weight: bold; }
+        .icon-star::before { content: '★ '; color: #F59E0B; }
+        .icon-download::before { content: '⬇️ '; }
+        .icon-play::before { content: '▶️ '; }
+        .icon-alert::before { content: '⚠️ '; }
+        .icon-safety::before { content: '🔒 '; }
+        .icon-guarantee::before { content: '✅ '; }
+        .icon-instant::before { content: '⚡ '; }
+        .icon-all-ages::before { content: '👨‍👩‍👧‍👦 '; }
+        .icon-bncc::before { content: '📚 '; }
+        .icon-updates::before { content: '🔄 '; }
+        .icon-bonus::before { content: '🎁 '; }
+        .icon-colorful::before { content: '🎨 '; }
+        .icon-years::before { content: '📅 '; }
+        .icon-teachers::before { content: '👨‍🏫 '; }
+        .icon-specialist::before { content: '🎓 '; }
+
+        /* Animações */
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .animate-pulse-custom {
+            animation: pulse 2s infinite;
+        }
+
+        /* Gradientes customizados */
+        .gradient-orange {
+            background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fbbf24 100%);
+        }
+
+        .gradient-green {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hover effects */
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Barra Superior de Oferta -->
+    <div class="gradient-orange text-white py-3 px-4 text-center">
+        <div class="flex items-center justify-center space-x-2 text-sm md:text-base font-bold">
+            <span class="animate-bounce">🔥</span>
+            <span>Desconto só HOJE nesta página 02/10/2025</span>
+            <span class="animate-bounce">🔥</span>
+        </div>
+    </div>
+
+    <!-- Header Principal -->
+    <header class="bg-gradient-to-br from-blue-50 via-white to-purple-50 py-8 md:py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-5xl mx-auto">
+                
+                <!-- Badge de Oferta -->
+                <div class="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 md:px-6 py-2 md:py-3 rounded-full mb-6 md:mb-8 shadow-lg">
+                    <span class="flex items-center justify-center space-x-2 text-xs md:text-sm font-bold uppercase">
+                        <span class="icon-instant"></span>
+                        <span>OFERTA LIMITADA - ACESSO IMEDIATO</span>
+                        <span class="icon-instant"></span>
+                    </span>
+                </div>
+
+                <!-- Título Principal -->
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 md:mb-8">
+                    <span class="text-gray-800">BRINCANOTA</span><br>
+                    <span class="text-blue-600">+150 Atividades Musicais</span><br>
+                    <span class="text-orange-500">em PDF + BÔNUS</span>
+                </h1>
+
+                <!-- Subtítulo -->
+                <p class="text-lg md:text-xl lg:text-2xl text-gray-700 mb-8 md:mb-10 max-w-4xl mx-auto leading-relaxed">
+                    Material pronto para imprimir, com <strong class="text-green-600">acesso imediato</strong> e 
+                    <strong class="text-blue-600">atualizações mensais</strong>. Totalmente compatível com BNCC.
+                </p>
+
+                <!-- Texto Chamada para Vídeo -->
+                <p class="text-center text-lg font-semibold text-gray-700 mb-4 animate-pulse">
+                    👇 Clique para ver uma demonstração! 👇
+                </p>
+
+                <!-- Vídeo -->
+                <div class="relative w-full max-w-xs mx-auto mb-8 md:mb-10 rounded-2xl shadow-2xl overflow-hidden group" style="aspect-ratio: 9 / 16;">
+                    <video id="main-video" class="w-full h-full object-cover" preload="metadata" poster="https://i.ibb.co/Rpj2qzvZ/2.png" playsinline loop>
+                        <source src="https://minio2.botix.site/typebot/Vsl2brincanotas%20%281%29_1758935450333.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                    <div id="video-overlay" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 cursor-pointer transition-opacity duration-300 group-hover:bg-opacity-40">
+                        <svg id="play-icon" class="w-20 h-20 text-white opacity-80 transform transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const video = document.getElementById('main-video');
+                        const overlay = document.getElementById('video-overlay');
+                        const playIcon = document.getElementById('play-icon');
+
+                        function togglePlay() {
+                            if (video.paused || video.ended) {
+                                video.play();
+                            } else {
+                                video.pause();
+                            }
+                        }
+
+                        overlay.addEventListener('click', togglePlay);
+
+                        video.addEventListener('play', () => {
+                            overlay.classList.add('opacity-0');
+                            video.setAttribute('controls', 'controls');
+                        });
+
+                        video.addEventListener('pause', () => {
+                            overlay.classList.remove('opacity-0');
+                            video.removeAttribute('controls');
+                        });
+
+                        video.addEventListener('ended', () => {
+                            overlay.classList.remove('opacity-0');
+                            video.removeAttribute('controls');
+                        });
+                    });
+                </script>
+
+                <!-- CTA Principal -->
+                <div class="mb-8">
+                    <a href="#planos" class="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-pulse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+                        QUERO AGORA!
+                    </a>
+                </div>
+
+                <div class="mb-8 max-w-md mx-auto">
+                    <div class="relative h-64 overflow-hidden rounded-lg shadow-lg bg-gradient-to-r from-yellow-50 to-orange-50">
+                        <div id="carousel-container" class="relative w-full h-full">
+                            <img src="https://i.ibb.co/Rpj2qzvZ/2.png" alt="Atividades Musicais PDF" loading="eager" width="400" height="256" class="carousel-image absolute inset-0 w-full h-64 object-contain rounded-lg shadow-md transition-all duration-1000 ease-in-out transform">
+                            <img src="https://i.ibb.co/N6cJzsB7/3.png" alt="Material Didático Musical" loading="lazy" width="400" height="256" class="carousel-image absolute inset-0 w-full h-64 object-contain rounded-lg shadow-md transition-all duration-1000 ease-in-out transform">
+                            <img src="https://i.ibb.co/BVNQ0CH3/4.png" alt="Atividades para Crianças" loading="lazy" width="400" height="256" class="carousel-image absolute inset-0 w-full h-64 object-contain rounded-lg shadow-md transition-all duration-1000 ease-in-out transform">
+                            <img src="https://i.ibb.co/Vcd6HBHB/5.png" alt="Bingo Musical Inclusivo" loading="lazy" width="400" height="256" class="carousel-image absolute inset-0 w-full h-64 object-contain rounded-lg shadow-md transition-all duration-1000 ease-in-out transform">
+                            <div id="carousel-indicators" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                                <button class="carousel-indicator w-3 h-3 rounded-full transition-all duration-300"></button>
+                                <button class="carousel-indicator w-3 h-3 rounded-full transition-all duration-300"></button>
+                                <button class="carousel-indicator w-3 h-3 rounded-full transition-all duration-300"></button>
+                                <button class="carousel-indicator w-3 h-3 rounded-full transition-all duration-300"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4">
+
+        <!-- O Que Você Vai Receber -->
+        <section class="py-12 md:py-20">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-8 md:mb-12 text-gray-800">
+                O Que Você Vai Receber
+            </h2>
+            
+            <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-gray-100">
+                <ul class="space-y-4 md:space-y-6">
+                    <li class="flex items-start text-base md:text-lg">
+                        <span class="icon-check mr-3 mt-1 flex-shrink-0"></span>
+                        <span><strong>Material Completo em PDF</strong> de alta qualidade</span>
+                    </li>
+                    <li class="flex items-start text-base md:text-lg">
+                        <span class="icon-check mr-3 mt-1 flex-shrink-0"></span>
+                        <span>Mais de <strong>150 páginas</strong> de atividades exclusivas</span>
+                    </li>
+                    <li class="flex items-start text-base md:text-lg">
+                        <span class="icon-check mr-3 mt-1 flex-shrink-0"></span>
+                        <span><strong>Códigos da BNCC</strong> inclusos em cada atividade</span>
+                    </li>
+                    <li class="flex items-start text-base md:text-lg">
+                        <span class="icon-check mr-3 mt-1 flex-shrink-0"></span>
+                        <span>Acesso digital pelo <strong>celular, tablet ou computador</strong></span>
+                    </li>
+                    <li class="flex items-start text-base md:text-lg">
+                        <span class="icon-check mr-3 mt-1 flex-shrink-0"></span>
+                        <span><strong>Pronto para imprimir</strong> quando e onde quiser</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Para Todas as Idades -->
+        <section class="py-12 md:py-20 bg-gradient-to-br from-blue-50 to-purple-50 -mx-4 px-4">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-8 md:mb-12 text-gray-800">
+                Para Todas as Idades
+            </h2>
+            
+            <p class="text-lg md:text-xl text-gray-700 text-center max-w-3xl mx-auto mb-10 md:mb-16 leading-relaxed">
+                Atividades pensadas para crianças, iniciantes e diferentes níveis de aprendizado musical. 
+                Ideal para professores, pais e educadores musicais.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+                <img src="https://i.ibb.co/YT4JMQpv/Captura-de-tela-2025-08-16-111811.png" alt="Exemplo de Atividade Musical" class="rounded-lg shadow-md w-full h-auto hover-lift" width="300" height="200" loading="lazy" decoding="async">
+                <img src="https://i.ibb.co/PvXJRWy8/Captura-de-tela-2025-08-16-111734.png" alt="Material Didático Colorido" class="rounded-lg shadow-md w-full h-auto hover-lift" width="300" height="200" loading="lazy" decoding="async">
+                <img src="https://i.ibb.co/fJxvdZf/Captura-de-tela-2025-08-16-111711.png" alt="Atividades Interativas" class="rounded-lg shadow-md w-full h-auto hover-lift" width="300" height="200" loading="lazy" decoding="async">
+                <img src="https://i.ibb.co/pv4JjzDv/Captura-de-tela-2025-08-16-111635.png" alt="Jogos Musicais" class="rounded-lg shadow-md w-full h-auto hover-lift" width="300" height="200" loading="lazy" decoding="async">
+            </div>
+        </section>
+
+        <!-- Por Que Escolher BrincaNota -->
+        <section class="py-12 md:py-20">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-8 md:mb-12 text-gray-800">
+                Por Que Escolher BrincaNota?
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl md:text-4xl text-blue-500 icon-instant mt-1 flex-shrink-0"></span>
+                        <div>
+                            <h3 class="font-bold text-xl md:text-2xl mb-2">Acesso Imediato</h3>
+                            <p class="text-gray-700">Após pagamento, receba tudo instantaneamente no seu email.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl md:text-4xl text-purple-500 icon-all-ages mt-1 flex-shrink-0"></span>
+                        <div>
+                            <h3 class="font-bold text-xl md:text-2xl mb-2">Todas as Idades</h3>
+                            <p class="text-gray-700">Atividades para todos os níveis de aprendizado musical.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl md:text-4xl text-orange-500 icon-bncc mt-1 flex-shrink-0"></span>
+                        <div>
+                            <h3 class="font-bold text-xl md:text-2xl mb-2">Compatível BNCC</h3>
+                            <p class="text-gray-700">Material alinhado com a Base Nacional Comum Curricular.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl md:text-4xl text-teal-500 icon-updates mt-1 flex-shrink-0"></span>
+                        <div>
+                            <h3 class="font-bold text-xl md:text-2xl mb-2">Atualizações Mensais</h3>
+                            <p class="text-gray-700">Novas atividades todos os meses, sem custo adicional.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl md:text-4xl text-red-500 icon-bonus mt-1 flex-shrink-0"></span>
+                        <div>
+                            <h3 class="font-bold text-xl md:text-2xl mb-2">Bônus Exclusivos</h3>
+                            <p class="text-gray-700">Jogos educativos inclusivos para diversificar as aulas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <span class="text-3xl md:text-4xl text-yellow-500 icon-colorful mt-1 flex-shrink-0"></span>
+                        <div>
+                            <h3 class="font-bold text-xl md:text-2xl mb-2">Material Colorido</h3>
+                            <p class="text-gray-700">Atividades visualmente atrativas com notas coloridas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Escolha Seu Plano -->
+        <section id="planos" class="py-12 md:py-20 bg-gradient-to-br from-blue-50 to-indigo-50 -mx-4 px-4">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-8 md:mb-12 text-gray-800">
+                Escolha Seu Plano
+            </h2>
+
+            <!-- Contador Regressivo -->
+            <div class="text-center mb-10 md:mb-16">
+                <p class="text-lg md:text-xl lg:text-2xl font-bold text-red-600 mb-6 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-6 w-6"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    OFERTA LIMITADA - TERMINA EM:
+                </p>
+                
+                <div class="flex justify-center space-x-2 md:space-x-4 text-white">
+                    <div class="bg-orange-500 p-3 md:p-4 rounded-lg shadow-lg text-center min-w-[70px] md:min-w-[90px]">
+                        <div class="text-2xl md:text-4xl font-black">03</div>
+                        <div class="text-xs uppercase font-bold">Horas</div>
+                    </div>
+                    <div class="bg-orange-500 p-3 md:p-4 rounded-lg shadow-lg text-center min-w-[70px] md:min-w-[90px]">
+                        <div class="text-2xl md:text-4xl font-black">28</div>
+                        <div class="text-xs uppercase font-bold">Minutos</div>
+                    </div>
+                    <div class="bg-orange-500 p-3 md:p-4 rounded-lg shadow-lg text-center min-w-[70px] md:min-w-[90px]">
+                        <div class="text-2xl md:text-4xl font-black">07</div>
+                        <div class="text-xs uppercase font-bold">Segundos</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <!-- Plano Básico -->
+                <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-2 border-gray-200 hover-lift">
+                    <h3 class="text-2xl md:text-3xl font-black text-center mb-6">Plano Básico</h3>
+                    
+                    <div class="text-center mb-8">
+                        <p class="text-red-500 line-through text-lg md:text-xl">R$ 18</p>
+                        <p class="text-green-600 text-4xl md:text-5xl font-black">R$ 3,90</p>
+                        <p class="text-gray-600 text-sm md:text-base">pagamento único</p>
+                    </div>
+                    
+                    <ul class="space-y-3 md:space-y-4 mb-8 md:mb-10">
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-green-500 mr-3 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                            <span>+150 Atividades Musicais PDF</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-green-500 mr-3 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                            <span>Acesso imediato</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-green-500 mr-3 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                            <span>Compatível com BNCC</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-green-500 mr-3 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                            <span>Garantia de 7 dias</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="https://pay.lowify.com.br/checkout?product_id=qaWPbi" class="block w-full text-center bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-md text-lg md:text-xl shadow-lg hover-lift transition-colors animate-pulse">
+                        QUERO O BÁSICO
+                    </a>
+                </div>
+
+                <!-- Plano Premium -->
+                <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-4 border-blue-500 relative hover-lift transform scale-105">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-bold uppercase shadow-lg">
+                        MAIS POPULAR
+                    </div>
+                    
+                    <h3 class="text-2xl md:text-3xl font-black text-center mb-2 mt-4">Plano Premium</h3>
+                    <p class="text-center text-sm md:text-base text-green-600 font-bold mb-6">+500 pessoas escolheram essa oferta</p>
+                    
+                    <div class="text-center mb-8">
+                        <p class="text-red-500 line-through text-lg md:text-xl">R$ 67</p>
+                        <p class="text-green-600 text-4xl md:text-5xl font-black">R$ 14,90</p>
+                        <p class="text-gray-600 text-sm md:text-base">pagamento único</p>
+                    </div>
+                    
+                    <ul class="space-y-3 md:space-y-4 mb-8 md:mb-10">
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-green-500 mr-3 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                            <span>+150 Atividades Musicais PDF</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-green-500 mr-3 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                            <span>Acesso imediato</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-green-500 mr-3 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                            <span>Compatível com BNCC</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-orange-400 mr-3 flex-shrink-0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <span><strong>BÔNUS:</strong> Atividades Notas Musicais</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-orange-400 mr-3 flex-shrink-0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <span><strong>BÔNUS:</strong> Bingo Musical</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-orange-400 mr-3 flex-shrink-0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <span><strong>BÔNUS:</strong> Notas Coloridas Iniciação</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-orange-400 mr-3 flex-shrink-0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <span><strong>BÔNUS:</strong> Atividades práticas em vídeo</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-orange-400 mr-3 flex-shrink-0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <span><strong>BÔNUS:</strong> Acesso Vitalício</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-green-500 mr-3 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                            <span>Atualizações mensais</span>
+                        </li>
+                        <li class="flex items-center text-base md:text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-green-500 mr-3 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                            <span>Garantia de 7 dias</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="https://pay.lowify.com.br/checkout?product_id=3c0aAR" class="block w-full text-center bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-md text-lg md:text-xl shadow-lg hover-lift animate-pulse-custom transition-colors">
+                        QUERO O PREMIUM!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testemunhos -->
+        <section class="py-12 md:py-20">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-8 md:mb-12 text-gray-800">
+            O Que Dizem Nossos Educadores
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+            <div class="bg-white rounded-xl md:rounded-2xl shadow-lg p-6 md:p-8 text-center hover-lift">
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-pink-100 to-pink-200 mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" alt="Ana Paula Costa" class="w-full h-full object-cover" />
+                </div>
+                <h4 class="font-bold text-lg md:text-xl mb-1">Ana Paula Costa</h4>
+                <p class="text-gray-600 text-sm mb-3">Professora de Música - SP</p>
+                <div class="flex justify-center mb-3 text-yellow-500">
+                <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+                </div>
+                <p class="text-gray-700 italic">"O BrincaNota transformou minhas aulas! As atividades são incríveis e super engajadoras."</p>
+            </div>
+            
+            <div class="bg-white rounded-xl md:rounded-2xl shadow-lg p-6 md:p-8 text-center hover-lift">
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                <img src="https://i.ibb.co/CpqP1r5K/istockphoto-1550525760-612x612.jpg" alt="Fernando Santos" class="w-full h-full object-cover" style="aspect-ratio: 1/1;" />
+                </div>
+                <h4 class="font-bold text-lg md:text-xl mb-1">Fernando Santos</h4>
+                <p class="text-gray-600 text-sm mb-3">Educador Infantil - RJ</p>
+                <div class="flex justify-center mb-3 text-yellow-500">
+                <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+                </div>
+                <p class="text-gray-700 italic">"Material de excelente qualidade e totalmente alinhado com a BNCC."</p>
+            </div>
+            
+            <div class="bg-white rounded-xl md:rounded-2xl shadow-lg p-6 md:p-8 text-center hover-lift md:col-span-2 lg:col-span-1">
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-green-100 to-green-200 mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" alt="Marta Oliveira" class="w-full h-full object-cover" />
+                </div>
+                <h4 class="font-bold text-lg md:text-xl mb-1">Marta Oliveira</h4>
+                <p class="text-gray-600 text-sm mb-3">Mãe e Professora - MG</p>
+                <div class="flex justify-center mb-3 text-yellow-500">
+                <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+                </div>
+                <p class="text-gray-700 italic">"Finalmente um material completo e divertido para ensinar música!"</p>
+            </div>
+            </div>
+        </section>
+
+        <!-- Sobre a Autora -->
+        <section class="py-12 md:py-20 bg-gradient-to-br from-purple-50 to-blue-50 -mx-4 px-4">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-8 md:mb-12 text-gray-800">
+            Sobre a Autora
+            </h2>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-10">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
+                <div class="flex-shrink-0">
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center shadow-xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="Foto da Autora Carla Mendes" class="w-full h-full object-cover">
+                </div>
+                </div>
+                <div class="text-center lg:text-left">
+                <h3 class="text-2xl md:text-3xl font-black mb-2">Profa. Carla Mendes</h3>
+                <p class="text-lg md:text-xl text-purple-600 font-bold mb-6">Educadora Musical Especialista</p>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    Com mais de 15 anos de experiência, a Profa. Carla Mendes é uma apaixonada educadora musical, 
+                    dedicada a tornar o aprendizado divertido e acessível. Criadora do método BrincaNota, ela já 
+                    impactou a vida de milhares de professores e alunos em todo o Brasil.
+                </p>
+                <div class="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 text-gray-700">
+                    <span class="flex items-center"><span class="icon-years mr-2"></span>15+ Anos de Experiência</span>
+                    <span class="flex items-center"><span class="icon-teachers mr-2"></span>2.000+ Professores Formados</span>
+                    <span class="flex items-center"><span class="icon-specialist mr-2"></span>Especialista BNCC</span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Garantia -->
+        <section class="py-12 md:py-20">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-8 md:mb-12 text-gray-800">
+                Garantia Incondicional de 7 Dias
+            </h2>
+            
+            <p class="text-lg md:text-xl text-gray-700 text-center max-w-3xl mx-auto mb-10 md:mb-16 leading-relaxed">
+                Sua satisfação é nossa prioridade! Adquira o BrincaNota hoje e experimente por 7 dias. 
+                Se não estiver 100% satisfeito, devolvemos seu dinheiro.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto mb-10 md:mb-16">
+                <div class="bg-white rounded-xl md:rounded-2xl shadow-lg p-6 md:p-8 text-center hover-lift">
+                    <span class="text-4xl md:text-5xl text-blue-500 mb-4 block icon-safety"></span>
+                    <h3 class="font-bold text-xl md:text-2xl mb-3">1. Adquira</h3>
+                    <p class="text-gray-700">Compre com segurança através da nossa plataforma.</p>
+                </div>
+                <div class="bg-white rounded-xl md:rounded-2xl shadow-lg p-6 md:p-8 text-center hover-lift">
+                    <span class="text-4xl md:text-5xl text-green-500 mb-4 block icon-check"></span>
+                    <h3 class="font-bold text-xl md:text-2xl mb-3">2. Experimente</h3>
+                    <p class="text-gray-700">Utilize o material por 7 dias inteiros.</p>
+                </div>
+                <div class="bg-white rounded-xl md:rounded-2xl shadow-lg p-6 md:p-8 text-center hover-lift">
+                    <span class="text-4xl md:text-5xl text-red-500 mb-4 block icon-guarantee"></span>
+                    <h3 class="font-bold text-xl md:text-2xl mb-3">3. Satisfação Total</h3>
+                    <p class="text-gray-700">Reembolso sem burocracia se não gostar.</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#planos" class="inline-block gradient-green text-white font-bold py-4 md:py-5 px-8 md:px-12 rounded-full text-lg md:text-xl shadow-xl hover-lift">
+                    COMPRAR COM SEGURANÇA
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-12 md:py-20 bg-gradient-to-br from-gray-50 to-blue-50 -mx-4 px-4">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-8 md:mb-12 text-gray-800">
+                Perguntas Frequentes
+            </h2>
+            
+            <div class="max-w-4xl mx-auto space-y-4">
+                <div class="bg-white rounded-xl md:rounded-2xl shadow-lg overflow-hidden">
+                    <button class="w-full text-left p-6 md:p-8 font-bold text-lg md:text-xl text-gray-800 hover:bg-gray-50 flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        Como receberei o material?
+                        <span class="text-xl text-gray-500">▼</span>
+                    </button>
+                    <div class="px-6 md:px-8 pb-6 md:pb-8 text-gray-700 hidden">
+                        <p>Após a confirmação do pagamento, você receberá um e-mail com o link para baixar todo o material em PDF imediatamente.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl md:rounded-2xl shadow-lg overflow-hidden">
+                    <button class="w-full text-left p-6 md:p-8 font-bold text-lg md:text-xl text-gray-800 hover:bg-gray-50 flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        Preciso de algum programa específico?
+                        <span class="text-xl text-gray-500">▼</span>
+                    </button>
+                    <div class="px-6 md:px-8 pb-6 md:pb-8 text-gray-700 hidden">
+                        <p>Não. Basta ter um leitor de PDF (como o Adobe Reader, que é gratuito) no seu dispositivo.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl md:rounded-2xl shadow-lg overflow-hidden">
+                    <button class="w-full text-left p-6 md:p-8 font-bold text-lg md:text-xl text-gray-800 hover:bg-gray-50 flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        O material é compatível com a BNCC?
+                        <span class="text-xl text-gray-500">▼</span>
+                    </button>
+                    <div class="px-6 md:px-8 pb-6 md:pb-8 text-gray-700 hidden">
+                        <p>Sim! Todas as atividades foram desenvolvidas seguindo as diretrizes da BNCC, com códigos específicos em cada atividade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="py-12 md:py-20 gradient-orange text-white text-center -mx-4 px-4">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black mb-6 md:mb-8">
+                Não Perca Esta Oportunidade!
+            </h2>
+            
+            <p class="text-lg md:text-xl lg:text-2xl mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed">
+                Garante agora o BrincaNota e transforme suas aulas de música com atividades divertidas e pedagógicas.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-8 md:mb-10">
+                <p class="flex items-center text-lg md:text-xl font-bold">
+                    <span class="icon-alert mr-2"></span>Oferta limitada - acaba em breve!
+                </p>
+                <p class="flex items-center text-lg md:text-xl font-bold">
+                    <span class="icon-guarantee mr-2"></span>Garantia incondicional de 7 dias
+                </p>
+            </div>
+            
+            <a href="#planos" class="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 md:py-6 px-8 md:px-16 rounded-full text-lg md:text-xl lg:text-2xl shadow-2xl hover-lift animate-pulse-custom">
+                QUERO RECEBER MINHAS ATIVIDADES AGORA!
+            </a>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 mt-8 text-gray-100 text-sm md:text-base">
+                <span class="flex items-center"><span class="icon-instant mr-2"></span>Acesso imediato</span>
+                <span class="flex items-center"><span class="icon-safety mr-2"></span>Pagamento 100% seguro</span>
+                <span class="flex items-center"><span class="icon-check mr-2"></span>Garantia de 7 dias</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-white py-8 md:py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-xl md:text-2xl font-bold mb-2">BrincaNota</h3>
+            <p class="text-gray-400 mb-6 md:mb-8">Educação Musical Divertida e Profissional</p>
+            
+            <div class="flex justify-center space-x-6 mb-6 md:mb-8">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Instagram">
+                    <svg class="h-6 w-6 md:h-8 md:w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Facebook">
+                    <svg class="h-6 w-6 md:h-8 md:w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="YouTube">
+                    <svg class="h-6 w-6 md:h-8 md:w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <p class="text-gray-500 text-sm">© 2025 BrincaNota. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('.carousel-image');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            let currentIndex = 0;
+            const totalImages = images.length;
+
+            function updateCarousel(newIndex) {
+                const prevIndex = currentIndex;
+                currentIndex = (newIndex + totalImages) % totalImages;
+
+                images.forEach((img, index) => {
+                    img.classList.remove('opacity-100', 'scale-100', 'translate-x-0', 'opacity-0', 'scale-95', '-translate-x-full', 'translate-x-full');
+                    if (index === currentIndex) {
+                        // Current slide: comes into view
+                        img.classList.add('opacity-100', 'scale-100', 'translate-x-0');
+                    } else if (index === prevIndex) {
+                        // Previous slide: moves out
+                        if (newIndex > prevIndex) {
+                            img.classList.add('opacity-0', 'scale-95', '-translate-x-full');
+                        } else {
+                            img.classList.add('opacity-0', 'scale-95', 'translate-x-full');
+                        }
+                    } else {
+                        // Other slides: stay hidden
+                        img.classList.add('opacity-0', 'scale-95');
+                        if (index > currentIndex) {
+                            img.classList.add('translate-x-full');
+                        } else {
+                            img.classList.add('-translate-x-full');
+                        }
+                    }
+                });
+
+                indicators.forEach((indicator, index) => {
+                    if (index === currentIndex) {
+                        indicator.classList.add('bg-yellow-600');
+                        indicator.classList.remove('bg-yellow-300');
+                    } else {
+                        indicator.classList.add('bg-yellow-300');
+                        indicator.classList.remove('bg-yellow-600');
+                    }
+                });
+            }
+
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    updateCarousel(index);
+                });
+            });
+
+            // Initialize
+            updateCarousel(0);
+
+            // Auto-play
+            setInterval(() => {
+                updateCarousel(currentIndex + 1);
+            }, 3000); // Change image every 3 seconds
+        });
+    </script>
+
+</body>
+</html>
